@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معهد المدينة العالي للإدارة</title>
+    <link rel="stylesheet" href="ss.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="cropped-cropped-1-4.png" alt="شعار معهد المدينة" class="logo">
+            <h1>معهد المدينة العالي للهندسة والتكنولوجيا</h1>
+        </header>
+        <main>
+            <p>في حالة عدم تمكنك من الاستعلام على النتيجة عليك بالتوجه للإدارة المالية أو الإتصال بالخط الساخن رقم <strong>19203</strong></p>
+            <form id="studentForm">
+                <div>
+                <label for="student-code">ادخل كود الطالب</label>
+            </div>
+            <div>
+                <input type="text" id="student-code" placeholder="Enter Code">
+            </div>
+            <div>
+                <label for="national-id">ادخل الرقم القومي</label>
+            </div>
+        <div>
+                <input type="text" id="national-id" placeholder="Enter NationaliD">
+            </div>
+                <button type="submit">عرض النتيجة</button>
+                <p id="error-message" class="error"></p>
+            </form>
+        </main>
+    </div>
+
+    <script src="java.js"></script>
+
+    <!-- مكان عرض النتيجة -->
+<div id="result-container" style="display:none; margin-top: 20px;">
+    <div class="student-info">
+        <p><strong>الرقم الأكاديمي:</strong> 200075</p>
+        <p><strong>اسم الطالب:</strong> محمد احمد عوض الكريم عبد العال</p>
+        <p>نقطة<strong> GPA:1.2 </strong></p>
+        <p> : notes</p>
+    </div>
+
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Notes</th>
+                <th>Grade</th>
+                <th>CourseName</th>
+                <th>CourseId</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>A-</td>
+                <td>تأثير التكنولوجيا على المجتمع</td>
+                <td>HUMN-X02</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>D</td>
+                <td>مواد هندسة مدنية (||)</td>
+                <td>CIVL-221</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
